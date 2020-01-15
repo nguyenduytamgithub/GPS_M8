@@ -87,7 +87,8 @@ void push_data(){
     root["s"] = randString;
     root["x"] =  String(longitude/10000000,7); //chi gui len string de ko bi loi hash
     root["y"] =  String(latitude/10000000,7);
-    root["v"] =  SIV;
+    root["v"] =  String(SIV);
+    root["t"] = String(myGPS.getGroundSpeed());
     root["pass"] = pass;
     char jsonChar[200];
     //root.printTo(jsonChar); 
